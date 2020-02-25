@@ -1,0 +1,283 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+  .mechanism {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+/* main-visualのサイズが常に画面幅いっぱいになるように調整 ⇒ new-pic用意してもらった方がいい */
+/* フォントサイズを変更 */
+/* メンバーの幅どうするか（ipad） */
+/* google formのサイズ変更 */
+/* pcの拡大150%がタブレットサイズと比べてどうなのか比較 */
+/* メンバー全員出す？ */
+/* スクロールもそんなないし、メニューバーいらないんじゃね */
+  .explain{
+    padding:0 50px;
+  }
+
+  .example {
+    width: 33%;
+    margin-bottom: 50px;
+  }
+
+  .member2 {
+    float: left;
+    width: 33%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 25px;
+  }
+
+  .mechanism-wrapper {
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f7f7f7;
+    text-align: center;
+    height:500px;
+  }
+
+  .example-wrapper {
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    height:520px;
+  }
+
+  .form_pc{
+    text-align: center;
+  }
+
+  .form_phone{
+    display:none;
+  }
+
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 600px) {
+  .header-right {
+    display:flex;
+  }
+
+  /*3本線の表示
+  header .humberger-wrap {
+    display:block;
+  }
+  */
+
+  /*3本線の位置*/
+  header .humberger-wrap {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  /*humberger-border1,2,3の線*/
+  header .humberger-wrap [class*=humberger-border]  {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    transition: .4s all ease;
+    transform-origin: center center;
+    background: #333;
+  }
+  /*1本目の線*/
+  header .humberger-wrap .humberger-border-1 {
+    top:20px;
+    right:0;
+  }
+  /*2本目の線*/
+  header .humberger-wrap .humberger-border-2 {
+    top:30px;
+    right:0;
+  }
+  /*3本目の線*/
+  header .humberger-wrap .humberger-border-3 {
+    top:40px;
+    right:0;
+  }
+
+  /*開閉ボタンopen時の横線1本目*/
+  header .humberger-wrap.opened .humberger-border-1 {
+    top: 30px;
+    transform: rotate(45deg);
+  }
+  /*開閉ボタンopen時の横線2本目*/
+  header .humberger-wrap.opened .humberger-border-2 {
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+  /*開閉ボタンopen時の横線3本目*/
+  header .humberger-wrap.opened .humberger-border-3 {
+    top: 30px;
+    transform: rotate(-45deg);
+    opacity:0;
+  }
+  /*メニューを非表示*/
+  header nav {
+    display:none;
+  }
+
+  /*open時に一番上のヘッダーの背景色を変化*/
+  header.opened {
+    background: #fff;
+  }
+
+  header.opened nav {
+    display: block;
+    min-height: 100vh;
+    opacity: 1;
+    top:60px;
+  }
+
+  header nav ul.header-navigation {
+    flex-flow: column nowrap;
+  }
+
+  header nav ul.header-navigation li a {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .header-bottom{
+    display:none;
+  }
+
+  .explain{
+    padding:0 30px;
+  }
+
+  .mechanism {
+    width: 100%;
+  }
+
+  .example {
+    width: 100%;
+  }
+
+  .member1 {
+    width: 100%;
+    padding-bottom:10px;
+  }
+
+  .member2 {
+    width: 100%;
+    padding-bottom:10px;
+  }
+
+  .top-wrapper {
+    text-align: left;
+  }
+
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right{
+    display:none;
+  }
+
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon{
+    display:block;
+  }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+
+    .mechanism-wrapper {
+      padding-bottom: 50px;
+      padding-left: 10%;
+      padding-right: 10%;
+      background-color: #f7f7f7;
+      text-align: center;
+      height:950px;
+    }
+
+    .example-wrapper {
+      padding-bottom: 50px;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: center;
+      height:1400px;
+    }
+
+    .member-wrapper {
+      padding-bottom: 50px;
+      padding-left: 5%;
+      padding-right: 5%;
+      background-color: #f7f7f7;
+      text-align: center;
+      height: 1400px;
+    }
+
+    .example-icon img{
+      width:50%;
+    }
+
+    .member-icon img{
+      display: none;
+    }
+
+    .iframe{
+      width:50%;
+    }
+
+    .explain p{
+      text-align: center;
+      font-size: 10px;
+      color:#50505A;
+    }
+
+    .form_phone{
+      text-align: center;
+    }
+
+    .form_pc{
+      display:none;
+    }
+
+    .footer-logo {
+      width:15%;
+    }
+
+    .logo {
+      width: 30%;
+    }
+    .member-wrapper{
+      display: none;
+    }
+
+    .newslist {
+            overflow: scroll;
+            width:60%;
+            height:100px;
+            background-color:#ECEEEF;
+            color:#50505A;
+            font-size:10px;
+            margin: auto;
+            margin-bottom: 40px;
+    }
+    .newslist ul{
+        list-style:square;
+    }
+}
