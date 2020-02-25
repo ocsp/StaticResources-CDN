@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color:#50505A;
+  font-weight: bold;
+}
+
+a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: #969EB4;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.top-wrapper {
+  padding-top: 40px;
+  background-color: #ECEEEF;
+  color: black;
+  text-align: left;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.main_visual img{
+  text-align: center;
+  width:80%;
+}
+
+
+header {
+  height: auto;
+  width: 100%;
+}
+
+.logo {
+  width: 20%;
+}
+
+.header-top {
+  text-align: center;
+}
+
+.header-right {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+ul {
+  list-style:none;
+}
+
+/*���潟���若����3�������茵�ず*/
+header .humberger-wrap {
+  display:none;
+}
+
+header nav {
+  position:relative;
+}
+
+header nav, header ul {
+  display:flex;
+}
+
+header nav li {
+  cursor:pointer;
+}
+
+header nav a {
+  line-height:60px;
+  display:block;
+  height:60px;
+  padding:0 30px;
+}
+
+.header-right{
+  display: none
+}
+
+.header-bottom {
+  background-color: white;
+  text-align: center;
+  padding-top:10px;
+}
+
+.header-bottom a {
+  text-decoration: none;
+  line-height: 35px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 0 30px;
+  display: inline-block;
+  transition: all 0.2s;
+  text-align: center;
+  color:#50505A;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+
+.header-bottom a:hover {
+  border-bottom:2px solid #EA5E79;
+}
+
+.service{
+  height:100%;
+  padding-bottom:50px;
+}
+
+.mechanism-wrapper {
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #f7f7f7;
+  text-align: center;
+  height:600px;
+}
+
+.example-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  height:600px;
+}
+
+.member-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+  height: 100%;
+}
+
+.heading {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.heading h2 {
+  text-align: center;
+  font-size:30px;
+  color: #06408E;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bolder;
+}
+
+.mechanism {
+  float: left;
+  width: 50%;
+}
+
+.example {
+  float: left;
+  width: 33%;
+}
+
+.member1 {
+  float: left;
+  width: 33%;
+  padding-bottom:40px;
+}
+
+.member2 {
+  float: left;
+  width: 33%;
+}
+
+.mechanism-icon {
+  position: relative;
+}
+
+.mechanism-icon img{
+  width:50%;
+}
+
+.example-icon {
+  position: relative;
+}
+
+.example-icon img{
+  width:70%;
+}
+
+.member-icon {
+  position: relative;
+}
+
+.member-icon img{
+  width:70%;
+}
+
+.text-contents {
+  width: 90%;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.contact-wrapper {
+  padding-bottom: 40px;
+  text-align: center;
+  height:100%;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.form iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-logo {
+  width:9%;
+}
+
+.footer-container{
+  text-align: center;
+}
+
+.explain p{
+  text-align: center;
+  font-size: 18px;
+  color:#50505A;
+}
+
+.clear{
+  clear:left;
+}
+
+.nopic{
+  display: none;
+}
+
+.wrap .icon_link_tab {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  transition: 0.3s ease-out;
+}
+
+.container_news {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.newslist {
+        overflow:scroll;
+        width:60%;
+        height:100px;
+        background-color:#ECEEEF;
+        color:#50505A;
+        font-size:16px;
+        margin: auto;
+        margin-bottom: 40px;
+}
